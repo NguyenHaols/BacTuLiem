@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
-import '../../global.css'
+import style from '../abc.module.css'
 
 export default function HomePage() {
   const [message, setMessage] = useState('No message found')
@@ -19,7 +19,7 @@ export default function HomePage() {
         <title>Home - Nextron (basic-lang-javascript)</title>
       </Head>
       <div>
-        <h1 className='text-red-600'>abcc</h1>
+        <h1 className={style.hello}>abcc</h1>
       </div>
       <div>
         <p>
